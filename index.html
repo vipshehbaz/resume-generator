@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="resume">
+      <form action="builded-resume.html" id="myForm">
+        <header class="header">
+          <label for="nm">Name:</label>
+          <input
+            type="text"
+            id="nm"
+            placeholder="Your Name"
+            class="name-field"
+          />
+          <p>
+            Email: <input type="email" id="em" placeholder="Your Email" />
+            Phone: <input type="tel" id="ph" placeholder="Your Phone" />
+          </p>
+        </header>
+
+        <section class="section">
+          <h2>
+            <input
+              type="text"
+              placeholder="Section Title"
+              value="Tech Skills"
+            />
+          </h2>
+          <ul>
+            <li><input type="text" id="skill-one" placeholder="eg:html" /></li>
+            <li><input type="text" id="skill-two" placeholder="eg:css" /></li>
+            <li>
+              <input type="text" id="skill-three" 0 placeholder="eg:js" />
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>
+            <input
+              type="text"
+              placeholder="Section Title"
+              value="Certifications"
+            />
+          </h2>
+          <ul>
+            <li>
+              <input type="text" id="cerOne" placeholder="eg:web development" />
+            </li>
+            <li>
+              <input
+                type="text"
+                id="cerTwo"
+                placeholder="eg:graphics designing"
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>
+            <input type="text" placeholder="Section Title" value="Education" />
+          </h2>
+          <ul>
+            <li><input type="text" id="edu-one" placeholder="eg:matric" /></li>
+            <li>
+              <input type="text" id="edu-two" placeholder="eg:Intermediate" />
+            </li>
+          </ul>
+        </section>
+        <input
+          class="submit-btn"
+          id="submit-btn"
+          type="submit"
+          value="Generate CV"
+        />
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
